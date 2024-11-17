@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 1rem .5rem;
+    font-size: 1rem;
+}
+h5,p{
+    font-size: 2rem;    
+}
+
+h1{
+    background: #000;
+    
+}
+
+
+.custom{
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateX(-100%);
+    /* transform: translateX(-100%); */
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion){
+    .hidden{
+        transition: none;
+    }
+}
